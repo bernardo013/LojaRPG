@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@90.6,500&family=Macondo&family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body { 
+    background-image: url("/assets/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Press Start 2P';
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* SECTION */
+.catalogo {
+    text-align: center;
+    color: white;
+    font-family: 'Inconsolata'; 
+    padding: 20px;
+}
+
+.catalogo h2 {
+    margin-bottom: 20px;
+}
+
+/* LISTA DOS ITENS NO CARD */
+.lista-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+    gap: 25px;
+    width: 100%;
+
+    
+        /* flex-direction: row;
+        justify-content: center;
+        gap: 40px; */
+}
+
+/* ARTICLE = CARD DO PRODUTO */
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 81%;
+    max-width: 250px;
+    padding: 30px;
+    background-color: rgb(126, 87, 35);
+    border-radius: 15%;
+
+    font-family: 'Inconsolata';
+    color: white;
+    /* css scan */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+                rgba(0, 0, 0, 0.06) 0px 2px 1px,
+                rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.produtos-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produtos h3 {
+    text-align: center;
+}
+
+.produtos p {
+    text-align: center;
+    font-family: 'Macondo';
+}
+
+
+/* telas maiores que 768 */
+@media (min-width: 768px) {
+
+    .cabecalho {
+        font-size: 18px;
+    }
+
+    /* .lista-itens {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    } */
+
+    .produtos {
+        max-width: 220px;
+    }
+}
+
+/* Telas maiores que 1024 */
+@media (min-width: 1024px) {
+    .cabecalho {
+        font-size: 22px;
+    }
+
+    .produtos {
+        max-width: 260px;
+    }
+}
+
+/* Página de login */
+
+.container-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* background-color: aqua; */
+   height: 100vh;
+   
+}
+
+.cabecalho-form{
+    display: flex;
+    flex-flow: column wrap;
+    /* background-color: antiquewhite; */
+    margin-top: 200px;
+    color: white;
+    font-family: 'Press Start 2P';
+    text-shadow: 4px 4px 4px rgb(121, 105, 71);
+}
+
+.login-form {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(156, 137, 53); */
+    flex-grow: 1;
+    justify-content: center;
+    margin-bottom: 180px;
+    gap: 8px;
+}
+
+.label{
+    display: flex;
+    font-size: 22px;
+    font-family: 'Macondo';
+    gap: 5px;
+    color: rgb(51, 48, 48);
+    text-shadow: 1px 4px 4px rgb(122, 91, 23);
+    
+}
+
+
+.input-nome {
+   border-radius: 30px;
+   box-shadow: 5px 3px rgba(73, 49, 4, 0.541);
+    
+}
+
+.input-senha {
+   border-radius: 30px;
+    box-shadow: 5px 3px rgba(73, 49, 4, 0.541);
+}
+
+.btn-login {
+    font-family: 'Macondo';
+    background-color: rgb(126, 87, 35);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 3px;
+    /* border-radius: 50px 20px; */
+    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+}
+
+.btn-login:hover{
+     border: 2px solid #8b6104d3;
+
+}
+
+
+@media(min-width: 768px) {
+
+}
+
+
+/* Telas maiores que 1024 */
+@media (min-width: 1024px) {
+    
+    .container-form { 
+        justify-content: flex-start; 
+        padding-top: 180px; 
+
+    }
+    .login-form { flex-grow: 0.3;}
+
+    .label {
+        font-size: 20px;
+        padding: 4px;
+    }
+    .btn-login {
+        padding: 2px;
+    }
+
+    .input-nome {
+        padding: 2px;
+    }
+
+    .input-senha {
+        padding: 2px;
+    }
+}
+
