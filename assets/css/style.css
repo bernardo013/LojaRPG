@@ -247,7 +247,7 @@ body {
 .cabecalho-thanks {
     display: flex;
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     color: white;
@@ -258,8 +258,9 @@ body {
 }
 
 .thanks-img {
-    display: flex;
-    padding: 10px;
-    height: 100px;
-    width: 100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100px;
+   padding: 10px;
 }
