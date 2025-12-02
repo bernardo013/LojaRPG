@@ -12,15 +12,16 @@
 
         <h1 class="cabecalho-form">Login</h1>
 
-        <form class="login-form">
-        <label class="label">Nome:</label>
-        <input type="text" name="nome" class="input-nome" />
-        <label class="label">Senha:</label>
-        <input type="password" name="senha" class="input-senha" />
-        <button type="submit" formaction="/assets/pages/thanks.html" class="btn-login">Entrar</button>
+        <form class="login-form"  >
+          <label class="label">Nome:</label>
+          <input type="text" name="nome" class="input-nome" placeholder="coloque aqui seu nome" required/>
+          <label class="label">Senha:</label>
+          <input type="password" name="senha" class="input-senha" placeholder="coloque aqui sua senha" required />
+          <button type="submit" class="btn-login"  formaction="/index.html">Entrar</button>
         </form>
     </section>
 
     <script src="/assets/scripts/index.js"></script>
+    <script src="/assets/scripts/login.js"></script>
   </body>
 </html>
