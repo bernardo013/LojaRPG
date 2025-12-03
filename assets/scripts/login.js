@@ -1,30 +1,34 @@
 const nome = document.querySelector(".input-nome");
 const senha = document.querySelector(".input-senha");
-const form = document.querySelector('.login-form')
-const btnLogin = document.querySelector(".btn-login")
+const form = document.querySelector(".login-form");
+const btnLogin = document.querySelector(".btn-login");
+const msg = document.querySelector(".msg-error-login");
 
 
     form.addEventListener("submit", (e) => {
         let validaForm = true;
-        let nomeSemEspaco = String(nome.value.trim())
-        let senhaSemEspaco = senha.value.trim()
+        let nomeSemEspaco = String(nome.value.trim());
+        let senhaSemEspaco = senha.value.trim();
 
-        if(nomeSemEspaco.length >= 5  && nomeSemEspaco.length < 20) {
+
+        //Validação nome 
+        if(nomeSemEspaco.length >= 6  && nomeSemEspaco.length < 20) {   
             //Redirecionar para o catálogo. 
 
         } else {
-            console.log('nome deve ter mais de 5 caracteres e menos de 20 caracteres')
+            msg.innerHTML = `<p style="color: red; font-size: 19px;"><strong>NOME</strong> deve ter no mínimo 5 caracteres</p>`
             validaForm = false;
         }
 
-
-        if(senhaSemEspaco.length > 2 && senhaSemEspaco.length <= 10 ) {
+        //Validação senha 
+        if(senhaSemEspaco.length > 6 && senhaSemEspaco.length <= 15 ) {
             //Redirecionar para o catálogo. 
+            
         } else {
-            console.log('senha deve ter mais de 2 caracteres e menos de 10 caracteres')
+            msg.innerHTML = `<p style="color: red; font-size: 19px;"><strong>SENHA</strong> deve ter no mínimo 8 caracteres.</p>`
             validaForm = false;
         }
-
+        
         if(!validaForm) {
             e.preventDefault();
         }
