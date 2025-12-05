@@ -7,6 +7,12 @@ const msg = document.querySelector(".msg-error-login");
         const nomeInput = document.querySelector(".input-nome");
         const senhaInput = document.querySelector(".input-senha");
 
+
+         localStorage.setItem('nome', nomeInput)
+         localStorage.setItem('senha', senhaInput)
+
+
+
         let validaForm = true;
 
         //função que cria um objeto com os valores digitados no input e adiciona eles no localStorage
@@ -32,7 +38,7 @@ const msg = document.querySelector(".msg-error-login");
 
         //Validação senha 
         if(senhaSemEspaco.length > 6 && senhaSemEspaco.length <= 15 ) {
-            
+            usuarioLogado()
         } else {
             msg.innerHTML = `<p style="color: red; font-size: 19px;"><strong>SENHA</strong> deve ter no mínimo 8 caracteres.</p>`
             validaForm = false;
