@@ -1,0 +1,74 @@
+[
+  {
+    "nome": "Capacete de couro",
+    "preco": 59
+  },
+  {
+    "nome": "Peitoral de couro",
+    "preco": 199.90
+  },
+  {
+    "nome": "Calça de couro",
+    "preco": 149.00
+  },
+  {
+    "nome": "Relógio Analógico Masculino",
+    "preco": 299.99
+  },
+  {
+    "nome": "Óculos de Sol Aviador",
+    "preco": 89.90
+  },
+  {
+    "nome": "Bolsa Feminina Transversal",
+    "preco": 119.50
+  },
+  {
+    "nome": "Blusa de Moletom Unissex",
+    "preco": 129.90
+  },
+  {
+    "nome": "Calça Jeans Slim Masculina",
+    "preco": 139.00
+  }, 
+  {
+    "nome": "Vestido Estampado Floral",
+    "preco": 159.90
+
+  },
+  {
+    "nome": "Fone de Ouvido Bluetooth",
+    "preco": 179.90
+  },
+  {
+    "nome": "Jaqueta Jeans Feminina",
+    "preco": 189.00
+  },
+  {
+    "nome": "Carteira de Couro Masculina",
+    "preco": 79.90
+
+  },
+
+  {
+    "nome": "Sandália Rasteira Feminina",
+    "preco": 59.90
+
+  },
+
+  {
+    "nome": "Boné Ajustável Estilo Trucker",
+    "preco": 49.90
+    
+  },
+
+  {
+    "nome": "Camisa Social Masculina",
+    "preco": 119.00
+  },
+
+  {
+    "nome": "Tênis Casual Branco Feminino",
+    "preco": 189.90
+  }
+]
