@@ -1,40 +1,42 @@
 const detalhe = document.querySelector('.detalhes-card')
+const xhr = new XMLHttpRequest()
 
-document.addEventListener("DOMContentLoaded", () => {
-  const urlObj = new URL(window.location.href);
-  const params = new URLSearchParams(urlObj.search);
-  const id = params.get("id");
+document.addEventListener('DOMContentLoaded', () => {
+    const urlObj = new URL(window.location.href);
+    const params = new URLSearchParams(urlObj.search)
+    const id = params.get("id");
 
-    const xhr = new XMLHttpRequest()
     xhr.onreadystatechange = function() {
-        if(xhr.readyState === 4 && xhr.status === 200) {
-            const detalhe = document.querySelector('.detalhes-card')
-            const produtos = JSON.parse(xhr.responseText)
-       
+     if (xhr.readyState == 4 && xhr.status == 200) {
+      var detalhe = document.querySelector(".detalhes-card");
+      var produtos = JSON.parse(xhr.responseText);
 
-            produtos.map(produto => {
-                if(produto.id == id) {
-                    detalhe.innerHTML = `
-                <img> src="/assets/images/quest.png" alt="" class="detalhes-img">
-                <div> class="detalhes-info">
-                    <h3> class="${produto.nome}"></h3>
+        produtos.map(element => {
+            detalhe.innerHTML = `
+            <img src="/assets/images/quest.png" alt="" class="detalhes-img">
+            <div class="detalhes-info">
+                <h3 class="detalhes-nome">${element.nome}</h3>
 
-                    <p> class="detalhes-preco">${produto.preco}</p>
+                <p class="detalhes-preco">${element.preco}</p>
 
-                    <p> class="detalhes-descricao">${produto.detalhe}</p>
-                    <div class="detalhes-btn">
-                        <button class="btn-add-carrinho"></button>
+                <p class="detalhes-descricao">${element.descricao}
+                    
+                </p>
+                <div class="detalhes-btn">
+                     <button class="btn-add-carrinho">Adicionar ao Carrinho</button>
 
-                        <a href="/index.html">
-                            <button class="btn-voltar"></button>
-                        </a>
-                    </div>
-                </div>`
-                }
-            })
+                     <a href="/index.html">
+                        <button class="btn-voltar">Voltar ao Catálogo</button>
+                    </a>
+                </div>
+            </div>`
+        }) 
 
-         xhr.open("GET", "produtos.json")
-         xhr.send()
-    }
-    }
+
+
+
+      }
+     }
+     xhr.open("GET", '/produtos.json')
+     xhr.send()
 })
