@@ -11,26 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
       var detalhe = document.querySelector(".detalhes-card");
       var produtos = JSON.parse(xhr.responseText);
 
-        produtos.map(element => {
+        const produtosFiltrados = produtos.filter(produto => String(produto.id) === id);
+
+        produtosFiltrados.map(element => {
             detalhe.innerHTML = `
             <img src="/assets/images/quest.png" alt="" class="detalhes-img">
             <div class="detalhes-info">
                 <h3 class="detalhes-nome">${element.nome}</h3>
-
                 <p class="detalhes-preco">${element.preco}</p>
-
-                <p class="detalhes-descricao">${element.descricao}
-                    
-                </p>
+                <p class="detalhes-descricao">${element.descricao}</p>
                 <div class="detalhes-btn">
-                     <button class="btn-add-carrinho">Adicionar ao Carrinho</button>
-
-                     <a href="/index.html">
+                    <button class="btn-add-carrinho">Adicionar ao Carrinho</button>
+                    <a href="/index.html">
                         <button class="btn-voltar">Voltar ao Catálogo</button>
                     </a>
                 </div>
-            </div>`
-        }) 
+            </div>`;
+        });
 
 
 
