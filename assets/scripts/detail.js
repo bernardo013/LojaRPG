@@ -1,4 +1,3 @@
-const detalhe = document.querySelector('.detalhes-card')
 const xhr = new XMLHttpRequest()
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
      if (xhr.readyState == 4 && xhr.status == 200) {
       var detalhe = document.querySelector(".detalhes-card");
       var produtos = JSON.parse(xhr.responseText);
-
         
 
         produtos.forEach(element => {
@@ -22,20 +20,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="detalhes-preco">${element.preco}</p>
                 <p class="detalhes-descricao">${element.descricao}</p>
                 <div class="detalhes-btn">
-                    <button class="btn-add-carrinho">Adicionar ao Carrinho</button>
+                    <button class="btn-add-carrinho">Adicionar ao carrinho</button>
                     <a href="/index.html">
                         <button class="btn-voltar">Voltar ao Catálogo</button>
                     </a>
                 </div>
             </div>`;
-        
-        }});
-
-
-
-
+            guardarProduto();
+        }})
       }
      }
+
+     
      xhr.open("GET", '/produtos.json')
-     xhr.send()
+     xhr.send()   
 })
+
+
+    function guardarProduto(){
+        const urlObj = new URL(window.location.href);
+        const params = new URLSearchParams(urlObj.search)
+        const id = params.get("id");
+
+        const btn = document.querySelector(".btn-add-carrinho").addEventListener('click', (addLocal) => {
+            addLocal = localStorage.setItem('id', String(id))
+        })
+    }
