@@ -11,9 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
       var detalhe = document.querySelector(".detalhes-card");
       var produtos = JSON.parse(xhr.responseText);
 
-        const produtosFiltrados = produtos.filter(produto => String(produto.id) === id);
+        
 
-        produtosFiltrados.map(element => {
+        produtos.forEach(element => {
+            if(element.id == id) {
             detalhe.innerHTML = `
             <img src="/assets/images/quest.png" alt="" class="detalhes-img">
             <div class="detalhes-info">
@@ -27,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </div>
             </div>`;
-        });
+        
+        }});
 
 
 
