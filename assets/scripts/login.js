@@ -1,11 +1,11 @@
-const form = document.querySelector(".login-form");
-const btnLogin = document.querySelector(".btn-login");
-const msg = document.querySelector(".msg-error-login");
+const form = document.querySelector(".login-form")
+const btnLogin = document.querySelector(".btn-login")
+const msg = document.querySelector(".msg-error-login")
 
 
     form.addEventListener("submit", (e) => {
-        const nomeInput = document.querySelector(".input-nome");
-        const senhaInput = document.querySelector(".input-senha");
+        const nomeInput = document.querySelector(".input-nome")
+        const senhaInput = document.querySelector(".input-senha")
 
 
          localStorage.setItem('nome', nomeInput)
@@ -13,7 +13,7 @@ const msg = document.querySelector(".msg-error-login");
 
 
 
-        let validaForm = true;
+        let validaForm = true
 
         //função que cria um objeto com os valores digitados no input e adiciona eles no localStorage
         //usei o método stringify para converter o objeto para JSON.
@@ -33,7 +33,7 @@ const msg = document.querySelector(".msg-error-login");
             usuarioLogado()
         } else {
             msg.innerHTML = `<p style="color: red; font-size: 19px;"><strong>NOME</strong> deve ter no mínimo 5 caracteres</p>`
-            validaForm = false;
+            validaForm = false
         }
 
         //Validação senha 
@@ -41,11 +41,11 @@ const msg = document.querySelector(".msg-error-login");
             usuarioLogado()
         } else {
             msg.innerHTML = `<p style="color: red; font-size: 19px;"><strong>SENHA</strong> deve ter no mínimo 8 caracteres.</p>`
-            validaForm = false;
+            validaForm = false
         }
         
         if(!validaForm) {
-            e.preventDefault();
+            e.preventDefault()
         }
     }) 
 

@@ -1,74 +1,90 @@
 [
   {
+    "id": 1,
     "nome": "Capacete de couro",
     "preco": 59
   },
   {
+    "id": 2,
     "nome": "Peitoral de couro",
     "preco": 199.90
   },
   {
+    "id": 3,
     "nome": "Calça de couro",
     "preco": 149.00
   },
   {
-    "nome": "Relógio Analógico Masculino",
+    "id": 4,
+    "nome": "Bota de couro",
     "preco": 299.99
   },
   {
-    "nome": "Óculos de Sol Aviador",
+    "id": 5,
+    "nome": "Poção de força",
     "preco": 89.90
   },
   {
-    "nome": "Bolsa Feminina Transversal",
+    "id": 6,
+    "nome": "Poção de mana",
     "preco": 119.50
   },
   {
-    "nome": "Blusa de Moletom Unissex",
+    "id": 7,
+    "nome": "Poção de Velocidade",
     "preco": 129.90
   },
   {
-    "nome": "Calça Jeans Slim Masculina",
+    "id": 8,
+    "nome": "Poção de cura",
     "preco": 139.00
   }, 
   {
-    "nome": "Vestido Estampado Floral",
+    "id": 9,
+    "nome": "Poção de Experiência",
     "preco": 159.90
 
   },
   {
-    "nome": "Fone de Ouvido Bluetooth",
+    "id": 10,
+    "nome": "Espada de obisiana",
     "preco": 179.90
   },
   {
-    "nome": "Jaqueta Jeans Feminina",
+    "id": 11,
+    "nome": "Espada de ferro",
     "preco": 189.00
   },
   {
-    "nome": "Carteira de Couro Masculina",
+    "id": 12,
+    "nome": "Espada de madeira",
     "preco": 79.90
 
   },
 
   {
-    "nome": "Sandália Rasteira Feminina",
+    "id": 13,
+    "nome": "Espada de Pedra",
     "preco": 59.90
 
   },
 
   {
-    "nome": "Boné Ajustável Estilo Trucker",
+    "id": 14,
+    "nome": "Escudo de ferro",
     "preco": 49.90
     
   },
 
   {
-    "nome": "Camisa Social Masculina",
+    "id": 15,
+    "nome": "Escudo de madeira",
     "preco": 119.00
   },
 
   {
-    "nome": "Tênis Casual Branco Feminino",
+    "id": 16,
+    "nome": "Elytra",
     "preco": 189.90
   }
 ]
