@@ -53,4 +53,6 @@ function guardarProduto() {
     //transforma o id em string novamente. Pois o localStorage só aceita strings.
     localStorage.setItem(nomeVarNoLocalStorage, JSON.stringify(arr));
 
+    //redireciona para o carrinho junto com o id adicionado ao array.
+    window.location.href = "./cart.html"
 }
