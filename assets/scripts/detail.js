@@ -36,17 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function guardarProduto() {
+    document.querySelector(".btn-add-carrinho");
+    //captura id em formato de string
     const urlObj = new URL(window.location.href);
     const params = new URLSearchParams(urlObj.search);
     const id = params.get("id");
 
+    //procura o id no localstorage
     const arrTemp = localStorage.getItem(nomeVarNoLocalStorage);
+    //valida se ele existe, se não, transforma arr em um array vazio. 
     var arr = arrTemp ? JSON.parse(arrTemp) : []
 
+    //adiciona o id dentro desse array vazio.
     arr = [...arr, id];
 
+    //transforma o id em string novamente. Pois o localStorage só aceita strings.
     localStorage.setItem(nomeVarNoLocalStorage, JSON.stringify(arr));
-
-    document.querySelector(".btn-add-carrinho");
 
 }
