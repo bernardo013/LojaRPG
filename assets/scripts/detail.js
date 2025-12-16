@@ -2,6 +2,7 @@ const xhr = new XMLHttpRequest();
 const nomeVarNoLocalStorage = "id";
 
 document.addEventListener("DOMContentLoaded", () => {
+    const carrinho = [];
     const urlObj = new URL(window.location.href);
     const params = new URLSearchParams(urlObj.search);
     const id = params.get("id");
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             var detalhe = document.querySelector(".detalhes-card");
             var produtos = JSON.parse(xhr.responseText);
 
-            produtos.forEach((element) => {
+            produtos.map((element) => {
                 if (element.id == id) {
                     detalhe.innerHTML = `
             <img src="/assets/images/quest.png" alt="" class="detalhes-img">
