@@ -160,7 +160,8 @@
     }
 
     .detalhes-img-cart {
-         
+        width: 180px;
+        height: 220px;
     }
 }
 
@@ -178,13 +179,47 @@
         text-align: center;
     }
 }
-
-
+    
 
 @media(min-width: 1024px) {
-    .detalhes-img {
+
+    .container-detalhes-main-cart {
+        max-width: 400px;
+        margin-top: 40px;
+    }
+
+    .container-detalhes-cart {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .detalhes-img-cart {
         width: 260px;
         height: 260px;
+    }
+
+    .detalhes-info-cart {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .detalhes-nome-cart {
+        font-size: 28px;
+    }
+
+    .detalhes-preco-cart {
+        font-size: 22px;
+        color: #ffe8a3;
+    }
+
+    .detalhes-descricao-cart {
+        font-size: 18px;
+    }
+
+    .controle-quantidade {
+        text-align: right;
     }
 
     .icone-moeda-cart {

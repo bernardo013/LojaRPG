@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <article class="container-detalhes-cart">
 
                                 <div class="detalhes-info-cart">
-                                     <img class="detalhes-img" src="${element.img}" alt="${element.nome}">   
+                                     <img class="detalhes-img-cart" src="${element.img}" alt="${element.nome}">   
                                     <h3 class="detalhes-nome-cart">${element.nome}</h3>
                                     <p class="detalhes-preco-cart">Preço: <img src="/assets/images/moeda.png" alt="moeda" class="icone-moeda-cart"> ${element.preco} de ouro</p>
                                     <p class="detalhes-descricao-cart">${element.descricao}</p>
