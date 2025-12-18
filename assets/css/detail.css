@@ -1,0 +1,156 @@
+.cabecalho-header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Press Start 2P';
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: 4px 4px 4px rgb(121, 105, 71);
+}
+
+
+.container-detalhes {
+    max-width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    color: white;
+    font-family: 'Macondo';
+}
+
+
+.detalhes-titulo {
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 3px 3px 3px rgb(121, 105, 71);
+}
+
+.detalhes-card {
+    background-color: rgb(126, 87, 35);
+    border: rgb(73, 49, 4);
+    box-shadow: rgba(73, 49, 4, 0.7);
+    border-radius: 12px;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+}
+
+
+.detalhes-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+
+    border-radius: 10px;
+    border: 2px solid #2a1807;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.detalhes-info {
+    text-align: center;
+}
+
+
+
+.detalhes-nome {
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-shadow: 3px 3px rgb(70, 45, 14);
+}
+
+
+.detalhes-preco {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffe8a3;
+}
+
+.detalhes-descricao {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+.detalhes-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+
+.btn-detalhes {
+    font-family: 'Macondo';
+    background-color: rgb(126, 87, 35);
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 3px;
+    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+    color: white;
+    
+}
+
+
+.btn-add-carrinho,
+.btn-voltar {
+    font-family: 'Macondo';
+    background-color: rgb(126, 87, 35);
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 3px;
+    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+    color: white;
+}
+
+
+@media (min-width: 1024px) {
+
+    .container-detalhes {
+        max-width: 1000px;
+        margin-top: 40px;
+    }
+
+    .detalhes-titulo {
+        font-size: 26px;
+        margin-bottom: 35px;
+    }
+
+    .detalhes-card {
+        flex-direction: row; 
+        justify-content: center;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .detalhes-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .detalhes-info {
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .detalhes-nome {
+        font-size: 28px;
+    }
+
+    .detalhes-preco {
+        font-size: 22px;
+    }
+
+    .detalhes-descricao {
+        font-size: 18px;
+    }
+
+}

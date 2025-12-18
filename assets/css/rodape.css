@@ -1,0 +1,8 @@
+.rodape {
+    display: flex;
+    justify-content: center;
+    color: rgb(117, 80, 38);
+    font-family: 'Press Start 2P';
+    padding: 40px;
+    text-shadow: 2px 2px 2px rgb(200, 200, 200);
+}
