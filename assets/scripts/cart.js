@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <h3 class="detalhes-nome-cart">${element.nome}</h3>
                                     <p class="detalhes-preco-cart">Preço: <img src="/assets/images/moeda.png" alt="moeda" class="icone-moeda-cart"> ${element.preco} de ouro</p>
                                     <p class="detalhes-descricao-cart">${element.descricao}</p>
-                            </article>                        
+                            </article>   
+
+                        <a href="/index.html" class="link-carrinho">
+                            <button class="btn-FinalizarCompra">Finalizar Compra</button>
+                        </a> 
                 `}
             })
 

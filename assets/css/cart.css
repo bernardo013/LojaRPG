@@ -85,6 +85,18 @@
     color: white;
     
 }
+
+.btn-FinalizarCompra{
+    font-family: 'Macondo';
+    background-color: rgb(126, 87, 35);
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 3px;
+    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+    color: white;
+}
+
 .btn-detalhes-cart {
     font-family: 'Macondo';
     background-color: rgb(126, 87, 35);
