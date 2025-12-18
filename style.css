@@ -73,6 +73,7 @@
     justify-content: center;
     gap: 4px;
     font-family: 'Macondo';
+    color: #ffe8a3;
 }
 
 .btn-produtos {
@@ -166,6 +167,7 @@
     }
 }
 
+
 .qntOuro {
     display: flex;
     justify-content: center;
@@ -183,4 +185,8 @@
         margin-bottom: 1px;
 }
 
+.icone-moeda-product {
+        width: 20px;
+        height: 20px;
+}
 

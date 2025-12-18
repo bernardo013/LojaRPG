@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li>
                         <article class="produtos">
                          <img class="detalhes-img" src="${element.img}" alt="${element.nome}">
-                            <h3 class="detalhes-nome">${element.nome}</h3>
-                            <p class="detalhes-preco"> Preço: <img src="./assets/images/moeda.png" alt="moeda" class="icone-moeda"> ${element.preco} de ouro </p>
+                            <h3 class="detalhes-nome-index">${element.nome}</h3>
+                            <p class="detalhes-preco-index">Preço: <img src="/assets/images/moeda.png" alt="moeda" class="icone-moeda-product"> ${element.preco} de ouro</p>
                         <a href="./assets/pages/detail.html?id=${element.id}"><button class="btn-produtos">Ver mais</button></a>
                         </article>
                         </li>
@@ -53,6 +53,6 @@ function AtualizaOuro() {
   
   if (usuarioIndex && usuarioIndex.ouro >= 500) {
     const qntOuro = document.querySelector(".qntOuro");
-    qntOuro.innerHTML = `<img src="./assets/images/moeda.png" alt="moeda" class="icone-moeda"> ouro: ${usuarioIndex.ouro} `;
+    qntOuro.innerHTML = `<img src="./assets/images/moeda.png" alt="moeda" class="icone-moeda-header"> ouro: ${usuarioIndex.ouro} `;
   }
 }

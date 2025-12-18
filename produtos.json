@@ -2,54 +2,63 @@
   {
     "id": 1,
     "img": "/assets/images/capacete.png",
+    "descricao": "Proteção básica para a cabeça com design rústico e chifres frontais",
     "nome": "Capacete de couro",
     "preco": 59
   },
   {
     "id": 2,
     "img": "/assets/images/peitoral.png",
+    "descricao": "Peitoral resistente feito de couro reforçado, ideal para aventuras",
     "nome": "Peitoral de couro",
     "preco": 199.90
   },
   {
     "id": 3,
     "img": "/assets/images/calca.png",
+    "descricao": "Calça resistente feita de couro reforçado, ideal para aventuras",
     "nome": "Calça de couro",
     "preco": 149.00
   },
   {
     "id": 4,
     "img": "/assets/images/bota.png",
+    "descricao": "Botas de couro duráveis que oferecem proteção e conforto para os pés",  
     "nome": "Bota de couro",
     "preco": 299.99
   },
   {
     "id": 5,
     "img": "/assets/images/pocaoForca.png",
+    "descricao": "Poção mágica que aumenta temporariamente a força física do usuário",
     "nome": "Poção de força",
     "preco": 89.90
   },
   {
     "id": 6,
     "img": "/assets/images/pocaoMana.png",
+    "descricao": "Poção mágica que restaura a energia mágica do usuário",
     "nome": "Poção de mana",
     "preco": 119.50
   },
   {
     "id": 7,
     "img": "/assets/images/pocaoVelocidade.png",
+    "descricao": "Poção mágica que aumenta temporariamente a velocidade do usuário",
     "nome": "Poção de Velocidade",
     "preco": 129.90
   },
   {
     "id": 8,
-    "img": "/assets/images/pocaoCura.png",
+    "img": "/assets/images/PocaoCura.png",
+    "descricao": "Poção mágica que restaura a saúde do usuário",
     "nome": "Poção de cura",
     "preco": 139.00
   }, 
   {
     "id": 9,
     "img": "/assets/images/pocaoExperiencia.png",
+    "descricao": "Poção mágica que concede experiência adicional ao usuário",
     "nome": "Poção de Experiência",
     "preco": 159.90
 
@@ -57,18 +66,21 @@
   {
     "id": 10,
     "img": "/assets/images/espadaObisidiana.png",
+    "descricao": "Espada poderosa forjada a partir da resistente obsidiana, ideal para combates intensos",
     "nome": "Espada de obisidiana",
     "preco": 179.90
   },
   {
     "id": 11,
     "img": "/assets/images/espadaFerro.png",
+    "descricao": "Espada robusta feita de ferro forjado, perfeita para guerreiros em busca de força e durabilidade",
     "nome": "Espada de ferro",
     "preco": 189.00
   },
   {
     "id": 12,
     "img": "/assets/images/espadaMadeira.png",
+    "descricao": "Espada leve e simples feita de madeira resistente, ideal para iniciantes em combate",
     "nome": "Espada de madeira",
     "preco": 79.90
 
@@ -77,6 +89,7 @@
   {
     "id": 13,
     "img": "/assets/images/espadaPedra.png",
+    "descricao": "Espada básica feita de pedra lascada, oferecendo uma opção acessível para aventureiros iniciantes",  
     "nome": "Espada de Pedra",
     "preco": 59.90
 
@@ -85,6 +98,7 @@
   {
     "id": 14,
     "img": "/assets/images/escudoFerro.png",
+    "descricao": "Escudo resistente feito de ferro forjado, proporcionando excelente defesa contra ataques inimigos",
     "nome": "Escudo de ferro",
     "preco": 49.90
     
@@ -93,6 +107,7 @@
   {
     "id": 15,
     "img": "/assets/images/escudoMadeira.png",
+    "descricao": "Escudo leve feito de madeira resistente, ideal para proteção básica em batalhas",
     "nome": "Escudo de madeira",
     "preco": 119.00
   },
@@ -100,7 +115,8 @@
   {
     "id": 16,
     "img": "/assets/images/escudoObisidiana.png",
-    "nome": "Elytra",
+    "descricao": "Escudo poderoso forjado a partir da resistente obsidiana, oferecendo proteção superior em combates intensos",
+    "nome": "Escudo de obisidiana",
     "preco": 189.90
   }
 ]

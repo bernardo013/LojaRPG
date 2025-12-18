@@ -67,9 +67,12 @@
 
 
 .detalhes-preco {
-    font-size: 18px;
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Macondo';
     color: #ffe8a3;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .detalhes-descricao {
@@ -111,8 +114,14 @@
     color: white;
 }
 
+.icone-moeda {
+    width: 28px;
+    height: 18px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
 
-@media(min-width: 768px) {
+@media(min-width: 768px) and (max-width: 1023px) {
     .detalhes-card {
         flex-direction: column; 
         justify-content: center;
@@ -120,7 +129,15 @@
         padding: 25px;
     }
 
+    .icone-moeda {
+     width: 25px;
+ }
+ 
+    .detalhes-preco{
+        justify-content: center;
+    }
 }
+
 
 
 @media (min-width: 1024px) {
@@ -158,10 +175,15 @@
 
     .detalhes-preco {
         font-size: 22px;
+        color: #ffe8a3;
+        justify-content: left;
     }
 
     .detalhes-descricao {
         font-size: 18px;
     }
 
+    .icone-moeda{
+        width: 30px;
+    }
 }

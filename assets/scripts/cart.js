@@ -13,24 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
             console.log('p', produtos)
 
-            produtos.map((e) => {
+            produtos.map((element) => {
                 //quero saber se o id do produto está dentro do array de ids do carrinho
                 //some testa se algum elemento do array passa na condição
-                if (idProdutosCarrinho.find((idDoCarrinho) => idDoCarrinho == e.id)) {
-                    console.log('entrou', e)
+                if (idProdutosCarrinho.find((idDoCarrinho) => idDoCarrinho == element.id)) {
+                    console.log('entrou', element)
                     carrinho.innerHTML += `             
                         <main class="container-detalhes-main-cart">
                             <article class="container-detalhes-cart">
 
                                 <div class="detalhes-info-cart">
-                                     <img class="detalhes-img" src="${e.img}" alt="${e.nome}">   
-                                    <h3 class="detalhes-nome-cart">${e.nome}</h3>
-                                    <p class="detalhes-preco-cart">${e.preco}</p>
-                                    <p class="detalhes-descricao-cart">${e.descricao}</p>
+                                     <img class="detalhes-img" src="${element.img}" alt="${element.nome}">   
+                                    <h3 class="detalhes-nome-cart">${element.nome}</h3>
+                                    <p class="detalhes-preco-cart">Preço: <img src="/assets/images/moeda.png" alt="moeda" class="icone-moeda-cart"> ${element.preco} de ouro</p>
+                                    <p class="detalhes-descricao-cart">${element.descricao}</p>
 
                                 
                                     <div class="controle-quantidade">
-                                        <button class="btn-quantidade-diminuir" onclick="diminuirQuantidade(${e.id})">-</button>
+                                        <button class="btn-quantidade-diminuir" onclick="diminuirQuantidade(${element.id})">-</button>
                                         <span class="quantidade">0</span>
                                         <button class="btn-quantidade-aumentar" onclick="addQuantidade()">+</button>
                                     </div>
