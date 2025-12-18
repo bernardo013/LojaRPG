@@ -1,62 +1,74 @@
 [
   {
     "id": 1,
+    "img": "/assets/images/capacete.png",
     "nome": "Capacete de couro",
     "preco": 59
   },
   {
     "id": 2,
+    "img": "/assets/images/peitoral.png",
     "nome": "Peitoral de couro",
     "preco": 199.90
   },
   {
     "id": 3,
+    "img": "/assets/images/calca.png",
     "nome": "Calça de couro",
     "preco": 149.00
   },
   {
     "id": 4,
+    "img": "/assets/images/bota.png",
     "nome": "Bota de couro",
     "preco": 299.99
   },
   {
     "id": 5,
+    "img": "/assets/images/pocaoForca.png",
     "nome": "Poção de força",
     "preco": 89.90
   },
   {
     "id": 6,
+    "img": "/assets/images/pocaoMana.png",
     "nome": "Poção de mana",
     "preco": 119.50
   },
   {
     "id": 7,
+    "img": "/assets/images/pocaoVelocidade.png",
     "nome": "Poção de Velocidade",
     "preco": 129.90
   },
   {
     "id": 8,
+    "img": "/assets/images/pocaoCura.png",
     "nome": "Poção de cura",
     "preco": 139.00
   }, 
   {
     "id": 9,
+    "img": "/assets/images/pocaoExperiencia.png",
     "nome": "Poção de Experiência",
     "preco": 159.90
 
   },
   {
     "id": 10,
-    "nome": "Espada de obisiana",
+    "img": "/assets/images/espadaObisidiana.png",
+    "nome": "Espada de obisidiana",
     "preco": 179.90
   },
   {
     "id": 11,
+    "img": "/assets/images/espadaFerro.png",
     "nome": "Espada de ferro",
     "preco": 189.00
   },
   {
     "id": 12,
+    "img": "/assets/images/espadaMadeira.png",
     "nome": "Espada de madeira",
     "preco": 79.90
 
@@ -64,6 +76,7 @@
 
   {
     "id": 13,
+    "img": "/assets/images/espadaPedra.png",
     "nome": "Espada de Pedra",
     "preco": 59.90
 
@@ -71,6 +84,7 @@
 
   {
     "id": 14,
+    "img": "/assets/images/escudoFerro.png",
     "nome": "Escudo de ferro",
     "preco": 49.90
     
@@ -78,12 +92,14 @@
 
   {
     "id": 15,
+    "img": "/assets/images/escudoMadeira.png",
     "nome": "Escudo de madeira",
     "preco": 119.00
   },
 
   {
     "id": 16,
+    "img": "/assets/images/escudoObisidiana.png",
     "nome": "Elytra",
     "preco": 189.90
   }

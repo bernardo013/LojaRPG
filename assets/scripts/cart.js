@@ -23,15 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             <article class="container-detalhes-cart">
 
                                 <div class="detalhes-info-cart">
-                                    <img src="/assets/images/quest.png" class="detalhes-img-cart">
-
+                                     <img class="detalhes-img" src="${e.img}" alt="${e.nome}">   
                                     <h3 class="detalhes-nome-cart">${e.nome}</h3>
                                     <p class="detalhes-preco-cart">${e.preco}</p>
                                     <p class="detalhes-descricao-cart">${e.descricao}</p>
 
                                 
                                     <div class="controle-quantidade">
-                                        <button class="btn-quantidade-diminuir" onclick="diminuirQuantidade()">-</button>
+                                        <button class="btn-quantidade-diminuir" onclick="diminuirQuantidade(${e.id})">-</button>
                                         <span class="quantidade">0</span>
                                         <button class="btn-quantidade-aumentar" onclick="addQuantidade()">+</button>
                                     </div>
@@ -48,15 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function addQuantidade() {
-        let quantidade = document.querySelector('.quantidade');
-        let valor = parseInt(quantidade.textContent);
-        valor++;
-        quantidade.textContent = valor;
+    let quantidade = document.querySelector('.quantidade'); 
+    let valor = parseInt(quantidade.textContent);
+    valor++;
+    quantidade.textContent = valor;
 }
-function diminuirQuantidade() {}
-        let quantidade = document.querySelector('.quantidade');
-        let valor = parseInt(quantidade.textContent);
-        if (valor >= 1) {
-            valor--;
-            quantidade.textContent = valor;
-        }
+function diminuirQuantidade() { }
+let quantidade = document.querySelector('.quantidade');
+let valor = parseInt(quantidade.textContent);
+if (valor >= 1) {
+    valor--;
+    quantidade.textContent = valor;
+}

@@ -112,6 +112,17 @@
 }
 
 
+@media(min-width: 768px) {
+    .detalhes-card {
+        flex-direction: column; 
+        justify-content: center;
+        gap: 30px;
+        padding: 25px;
+    }
+
+}
+
+
 @media (min-width: 1024px) {
 
     .container-detalhes {

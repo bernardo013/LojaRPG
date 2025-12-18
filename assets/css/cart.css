@@ -38,6 +38,7 @@
     box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+
 .detalhes-nome-cart {
     font-size: 22px;
     margin-bottom: 8px;
@@ -56,7 +57,7 @@
 }
 
 .container-detalhes-main-cart {
-    max-width: 90%;
+    max-width: 500px;
     text-align: center;
     margin: 20px auto;
     padding: 10px;
@@ -92,7 +93,7 @@
 @media (min-width: 1024px) {
 
     .container-detalhes-main-cart {
-        max-width: 60%;
+        max-width: 400px;
         margin-top: 40px;
     }
 
@@ -173,4 +174,12 @@
     padding: 8px 20px;
     box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
     cursor: pointer;
+}
+
+
+@media(min-width: 1024px) {
+    .detalhes-img {
+        width: 260px;
+        height: 260px;
+    }
 }
