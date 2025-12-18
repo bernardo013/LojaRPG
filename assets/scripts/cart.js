@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <p class="detalhes-descricao-cart">${element.descricao}</p>
                             </article>   
 
-                        <a href="/index.html" class="link-carrinho">
+                        <a href="/thanks.html" class="link-carrinho">
                             <button class="btn-FinalizarCompra">Finalizar Compra</button>
                         </a> 
                 `}

@@ -55,7 +55,6 @@ function AtualizaOuro() {
   
   if (usuarioIndex && usuarioIndex.ouro >= 500) {
     const qntOuro = document.querySelector(".qntOuro");
-    qntOuro.innerHTML = `<img src="./assets/images/moeda.png" alt="moeda" class="icone-moeda-header"> ouro: ${usuarioIndex.ouro} `;
     qntOuro.innerHTML = `<img src="/assets/images/moeda.png" alt="moeda" class="icone-moeda-header"> ouro: ${usuarioIndex.ouro} `;
   }
 }
