@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
             var detalhe = document.querySelector(".detalhes-card");
             var produtos = JSON.parse(xhr.responseText);
 
-            produtos.map((element) => {
+            produtos.forEach((element) => {
                 if (element.id == id) {
                     detalhe.innerHTML = `
-            <img src="/assets/images/quest.png" alt="" class="detalhes-img">
+            <img class="detalhes-img" src="${element.img}" alt="${element.nome}">
             <div class="detalhes-info">
                 <h3 class="detalhes-nome">${element.nome}</h3>
-                <p class="detalhes-preco">${element.preco}</p>
+                <p class="detalhes-preco">${element.preco} de ouro</p>
                 <p class="detalhes-descricao">${element.descricao}</p>
                 <div class="detalhes-btn">
                     <button class="btn-add-carrinho" onclick="guardarProduto()">Adicionar ao Carrinho</button>

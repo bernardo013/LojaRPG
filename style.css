@@ -11,6 +11,13 @@
     text-shadow: 4px 4px 4px rgb(121, 105, 71);
 }
 
+.qntOuro {
+    font-family: 'Macondo';
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
 .produtos {
     display: flex;
     flex-direction: column;
@@ -36,14 +43,35 @@
 .produtos-img {
     width: 100%;
     border-radius: 10px;
+    
 }
 
-.produtos h3 {
+.icone-moeda {
+     width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
+.detalhes-img {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #2a1807;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.datalhes-nome {
     text-align: center;
 }
 
-.produtos p {
-    text-align: center;
+.detalhes-preco {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
     font-family: 'Macondo';
 }
 
@@ -109,6 +137,18 @@
     .produtos {
         max-width: 220px;
     }
+    .detalhes-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .detalhes-preco {
+        font-size: 15px;
+    }
+
+    .detalhes-nome {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -119,4 +159,28 @@
     .produtos {
         max-width: 260px;
     }
+
+    .detalhes-img {
+        width: 200px;
+        height: 200px;
+    }
 }
+
+.qntOuro {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Macondo';
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.icone-moeda {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+        margin-bottom: 1px;
+}
+
+
