@@ -114,7 +114,7 @@
     color: white;
 }
 
-.icone-moeda {
+.icone-moeda-detail {
     width: 28px;
     height: 18px;
     margin-left: 5px;
@@ -129,7 +129,7 @@
         padding: 25px;
     }
 
-    .icone-moeda {
+    .icone-moeda-detail{
      width: 25px;
  }
  
@@ -183,7 +183,7 @@
         font-size: 18px;
     }
 
-    .icone-moeda{
+    .icone-moeda-detail{
         width: 30px;
     }
 }

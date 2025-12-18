@@ -18,6 +18,13 @@
     font-size: 18px;
 }
 
+.icone-moeda-header {
+     width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
 .produtos {
     display: flex;
     flex-direction: column;
@@ -46,13 +53,6 @@
     
 }
 
-.icone-moeda {
-     width: 18px;
-    height: 18px;
-    margin-left: 5px;
-    margin-bottom: 1px;
-}
-
 .detalhes-img {
     width: 200px;
     height: 180px;
@@ -68,10 +68,10 @@
     text-align: center;
 }
 
-.detalhes-preco {
+.detalhes-preco-index {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: px;
     font-family: 'Macondo';
     color: #ffe8a3;
 }
@@ -178,15 +178,10 @@
     font-size: 20px;
 }
 
-.icone-moeda {
+.icone-moeda-produto {
         width: 25px;
         height: 25px;
         margin-left: 5px;
         margin-bottom: 1px;
-}
-
-.icone-moeda-product {
-        width: 20px;
-        height: 20px;
 }
 
