@@ -42,7 +42,7 @@
 }
 
 
-.detalhes-img {
+.detalhes-img-detail {
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -78,14 +78,6 @@
 .detalhes-descricao {
     font-size: 16px;
     margin-bottom: 25px;
-}
-
-
-.detalhes-botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
 }
 
 
@@ -159,7 +151,7 @@
         padding: 30px;
     }
 
-    .detalhes-img {
+    .detalhes-img-detail {
         width: 260px;
         height: 260px;
     }

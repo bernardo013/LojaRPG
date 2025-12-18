@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             produtos.forEach((element) => {
                 if (element.id == id) {
                     detalhe.innerHTML = `
-            <img class="detalhes-img" src="${element.img}" alt="${element.nome}">
+            <img class="detalhes-img-detail" src="${element.img}" alt="${element.nome}">
             <div class="detalhes-info">
                 <h3 class="detalhes-nome">${element.nome}</h3>
                 <p class="detalhes-preco"><strong>Preço: <img src="/assets/images/moeda.png" alt="moeda" class="icone-moeda-detail"> ${element.preco} de ouro</strong></p>

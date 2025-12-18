@@ -53,7 +53,7 @@
     
 }
 
-.detalhes-img {
+.detalhes-img-index {
     width: 200px;
     height: 180px;
     object-fit: cover;
@@ -64,14 +64,13 @@
 
 
 
-.datalhes-nome {
+.detalhes-nome-index {
     text-align: center;
 }
 
 .detalhes-preco-index {
     display: flex;
     justify-content: center;
-    gap: px;
     font-family: 'Macondo';
     color: #ffe8a3;
 }
@@ -138,7 +137,7 @@
     .produtos {
         max-width: 220px;
     }
-    .detalhes-img {
+    .detalhes-img-index {
         width: 150px;
         height: 150px;
     }
@@ -161,7 +160,7 @@
         max-width: 260px;
     }
 
-    .detalhes-img {
+    .detalhes-img-index {
         width: 200px;
         height: 200px;
     }

@@ -67,6 +67,9 @@
     padding: 10px;
     color: white;
     font-family: 'Macondo';
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 /* Botões do carrinho */

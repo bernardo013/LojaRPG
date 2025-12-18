@@ -19,9 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (idProdutosCarrinho.find((idDoCarrinho) => idDoCarrinho == element.id)) {
                     console.log('entrou', element)
                     carrinho.innerHTML += `             
-                        <main class="container-detalhes-main-cart">
                             <article class="container-detalhes-cart">
-
                                 <div class="detalhes-info-cart">
                                      <img class="detalhes-img-cart" src="${element.img}" alt="${element.nome}">   
                                     <h3 class="detalhes-nome-cart">${element.nome}</h3>
@@ -36,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                     </div>
                                 </div>
                             </article>                        
-                        </main>
                 `}
             })
         }
