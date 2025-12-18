@@ -149,6 +149,14 @@
     margin-bottom: 1px;
 }
 
+.p-valor-total {
+    font-size: 20px;
+    font-family: 'Macondo';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+
 @media(min-width: 375px) and (max-width: 767px) {
     .container-detalhes-cart {
         flex-direction: row; 
