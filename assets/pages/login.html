@@ -1,30 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/login.css"/>
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/rodape.css">
+    <link rel="stylesheet" href="/assets/css/login.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/rodape.css" />
 
     <title>Página de Login</title>
   </head>
+
   <body>
-
     <section class="container-form">
+      <h1 class="cabecalho-form">Login</h1>
 
-        <h1 class="cabecalho-form">Login</h1>
-
-        <form class="login-form"  >
-          <p class="msg-error-login"></p>
-          <label class="label">Nome:</label>
-          <input type="text" name="nome" class="input-nome" placeholder="coloque aqui seu nome" required/>
-          <label class="label">Senha:</label>
-          <input type="password" name="senha" class="input-senha" placeholder="coloque aqui sua senha" required />
-          <label class="label">Ouro:</label>
-          <input type="number" name="ouro" class="input-ouro" placeholder="quanto você quer depositar?" required />
-          <button type="submit" class="btn-login" formaction="/index.html">Entrar</button>
-        </form>
+      <form class="login-form">
+        <p class="msg-error-login"></p>
+        <label class="label">Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          class="input-nome"
+          placeholder="coloque aqui seu nome"
+          required
+        />
+        <label class="label">Senha:</label>
+        <input
+          type="password"
+          name="senha"
+          class="input-senha"
+          placeholder="coloque aqui sua senha"
+          required
+        />
+        <label class="label">Ouro:</label>
+        <input
+          type="number"
+          name="ouro"
+          class="input-ouro"
+          placeholder="quanto você quer depositar?"
+          required
+        />
+        <button type="submit" class="btn-login" formaction="/index.html">
+          Entrar
+        </button>
+      </form>
     </section>
 
     <script src="/assets/scripts/login.js"></script>

@@ -1,23 +1,24 @@
 const xhr = new XMLHttpRequest();
 
-document.addEventListener('DOMContentLoaded', () => {
-    const idProdutosCarrinhoBase = localStorage.getItem('id')
-    const idProdutosCarrinho = JSON.parse(idProdutosCarrinhoBase)
+document.addEventListener("DOMContentLoaded", () => {
+  const idProdutosCarrinhoBase = localStorage.getItem("id");
+  const idProdutosCarrinho = JSON.parse(idProdutosCarrinhoBase);
 
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      const carrinho = document.querySelector(".container-detalhes-main-cart");
+      const totalOuroCarrinho = document.querySelector(".p-valor-total");
+      const produtos = JSON.parse(xhr.responseText);
 
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            const carrinho = document.querySelector('.container-detalhes-main-cart')
-			const totalOuroCarrinho = document.querySelector('.p-valor-total')
-            const produtos = JSON.parse(xhr.responseText)
+      console.log("p", produtos);
 
-            console.log('p', produtos)
-
-            produtos.map((element) => {
-                //some testa se algum elemento do array passa na condição
-                if (idProdutosCarrinho.find((idDoCarrinho) => idDoCarrinho == element.id)) {
-                    console.log('entrou', element)
-                    carrinho.innerHTML += `             
+      produtos.map((element) => {
+        //some testa se algum elemento do array passa na condição
+        if (
+          idProdutosCarrinho.find((idDoCarrinho) => idDoCarrinho == element.id)
+        ) {
+          console.log("entrou", element);
+          carrinho.innerHTML += `             
                             <article class="container-detalhes-cart">
                                 <div class="detalhes-info-cart">
                                      <img class="detalhes-img-cart" src="${element.img}" alt="${element.nome}">   
@@ -26,30 +27,29 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <p class="detalhes-descricao-cart">${element.descricao}</p>
                             </article>   
 
-                        <a href="./thanks.html" class="link-carrinho">
-                            <button class="btn-FinalizarCompra">Finalizar Compra</button>
-                        </a> 
-                `}
-            })
-
-let total = 0 
-            if (idProdutosCarrinho.length > 0) {
-                idProdutosCarrinho.forEach((id) => {
-                    const produto = produtos.find((p) => String(p.id) == String(id))
-                    if (produto) {
-                        total += Number(produto.preco)
-                    }
-                })
-            }
-	// exibe o total de ouro do carrinho
-		if (totalOuroCarrinho) {
-			totalOuroCarrinho.textContent = `Total: ${total} de ouro`
-		}
-			localStorage.setItem('totalOuroCarrinho', String(total))
+                `;
         }
+      });
+
+      let total = 0;
+      //calcula o total de ouro dos produtos no carrinho
+      //adiciona no localStorage
+      //e exibe na tela
+      if (idProdutosCarrinho.length > 0) {
+        idProdutosCarrinho.forEach((id) => {
+          const produto = produtos.find((p) => String(p.id) == String(id));
+          if (produto) {
+            total += Number(produto.preco);
+          }
+        });
+      }
+      // exibe o total de ouro do carrinho
+      if (totalOuroCarrinho) {
+        totalOuroCarrinho.textContent = `Total: ${total} de ouro`;
+      }
+      localStorage.setItem("totalOuroCarrinho", String(total));
     }
-    xhr.open('GET', '/produtos.json')
-    xhr.send()
-})
-
-
+  };
+  xhr.open("GET", "/produtos.json");
+  xhr.send();
+});

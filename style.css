@@ -1,186 +1,179 @@
-
 /* Pagina principal */
-.cabecalho{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Press Start 2P';
-    padding: 30px;
-    text-align: center;
-    font-size: 14px;
-    text-shadow: 4px 4px 4px rgb(121, 105, 71);
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Press Start 2P";
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  text-shadow: 4px 4px 4px rgb(121, 105, 71);
 }
 
 .qntOuro {
-    font-family: 'Macondo';
-    color: white;
-    margin-top: 30px;
-    font-size: 18px;
+  font-family: "Macondo";
+  color: white;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 .icone-moeda-header {
-     width: 18px;
-    height: 18px;
-    margin-left: 5px;
-    margin-bottom: 1px;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  margin-bottom: 1px;
 }
 
 .produtos {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 630px;
-    max-width: 250px;
-    padding: 30px;
-    background-color: rgb(126, 87, 35);
-    border-radius: 15px;
-    font-family: 'Inconsolata';
-    color: white;
-    /* css scan */
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-                rgba(0, 0, 0, 0.06) 0px 2px 1px,
-                rgba(0, 0, 0, 0.09) 0px 4px 2px,
-                rgba(0, 0, 0, 0.09) 0px 8px 4px,
-                rgba(0, 0, 0, 0.09) 0px 16px 8px,
-                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 630px;
+  max-width: 250px;
+  padding: 30px;
+  background-color: rgb(126, 87, 35);
+  border-radius: 15px;
+  font-family: "Inconsolata";
+  color: white;
+  /* css scan */
+  box-shadow:
+    rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .produtos-img {
-    width: 100%;
-    border-radius: 10px;
-    
+  width: 100%;
+  border-radius: 10px;
 }
 
 .detalhes-img-index {
-    width: 200px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #2a1807;
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #2a1807;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .detalhes-nome-index {
-    text-align: center;
+  text-align: center;
 }
 
 .detalhes-preco-index {
-    display: flex;
-    justify-content: center;
-    font-family: 'Macondo';
-    color: #ffe8a3;
+  display: flex;
+  justify-content: center;
+  font-family: "Macondo";
+  color: #ffe8a3;
 }
 
 .btn-produtos {
-     font-family: 'Macondo';
-    background-color: rgb(126, 87, 35);
-    cursor: pointer;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 3px;
-    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
-    color: white;
+  font-family: "Macondo";
+  background-color: rgb(126, 87, 35);
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 3px;
+  box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+  color: white;
 }
 
 /* botões da página principal */
-.btn-login-cabecalho{
-    font-family: 'Macondo';
-    background-color: rgb(126, 87, 35);
-    cursor: pointer;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 3px;
-    /* border-radius: 50px 20px; */
-    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
-    color: white;
-    
+.btn-login-cabecalho {
+  font-family: "Macondo";
+  background-color: rgb(126, 87, 35);
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 3px;
+  /* border-radius: 50px 20px; */
+  box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+  color: white;
 }
 
 .catalogo {
-    text-align: center;
-    color: white;
-    font-family: 'Inconsolata'; 
-    padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Inconsolata";
+  padding: 20px;
 }
 
 .lista-itens {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-    margin-top: 3vw;
-    gap: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 3vw;
+  gap: 25px;
 }
 
 .catalogo-h2 {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Press Start 2P';
-    padding: 30px;
-    text-align: center;
-    font-size: 26px;  
-    text-shadow: 4px 4px 4px rgb(121, 105, 71);
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Press Start 2P";
+  padding: 30px;
+  text-align: center;
+  font-size: 26px;
+  text-shadow: 4px 4px 4px rgb(121, 105, 71);
 }
 
 @media (min-width: 768px) {
+  .cabecalho {
+    font-size: 18px;
+  }
 
-    .cabecalho {
-        font-size: 18px;
-    }
+  .produtos {
+    max-width: 220px;
+  }
+  .detalhes-img-index {
+    width: 150px;
+    height: 150px;
+  }
 
-    .produtos {
-        max-width: 220px;
-    }
-    .detalhes-img-index {
-        width: 150px;
-        height: 150px;
-    }
+  .detalhes-preco {
+    font-size: 15px;
+  }
 
-    .detalhes-preco {
-        font-size: 15px;
-    }
-
-    .detalhes-nome {
-        font-size: 18px;
-    }
+  .detalhes-nome {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .cabecalho {
-        font-size: 22px;
-    }
+  .cabecalho {
+    font-size: 22px;
+  }
 
-    .produtos {
-        max-width: 260px;
-    }
+  .produtos {
+    max-width: 260px;
+  }
 
-    .detalhes-img-index {
-        width: 200px;
-        height: 200px;
-    }
+  .detalhes-img-index {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-
 .qntOuro {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Macondo';
-    color: white;
-    margin-top: 30px;
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Macondo";
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .icone-moeda-produto {
-        width: 25px;
-        height: 25px;
-        margin-left: 5px;
-        margin-bottom: 1px;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-bottom: 1px;
 }
-

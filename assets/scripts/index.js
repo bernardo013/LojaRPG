@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   var xhr = new XMLHttpRequest();
 
-  //pegar id 
+  //pegar id
   const urlObj = new URL(window.location.href);
   const params = new URLSearchParams(urlObj.search);
   const id = params.get("id");
@@ -52,7 +52,7 @@ function TrocaNome() {
 // se sim implementa no no html da index.html
 function AtualizaOuro() {
   const usuarioIndex = JSON.parse(localStorage.getItem("usuario"));
-  
+
   if (usuarioIndex && usuarioIndex.ouro >= 500) {
     const qntOuro = document.querySelector(".qntOuro");
     qntOuro.innerHTML = `<img src="/assets/images/moeda.png" alt="moeda" class="icone-moeda-header"> ouro: ${usuarioIndex.ouro} `;

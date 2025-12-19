@@ -1,181 +1,168 @@
 .cabecalho-header {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: 'Press Start 2P';
-    padding: 30px;
-    text-align: center;
-    font-size: 14px;
-    text-shadow: 4px 4px 4px rgb(121, 105, 71);
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Press Start 2P";
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  text-shadow: 4px 4px 4px rgb(121, 105, 71);
 }
-
 
 .container-detalhes {
-    max-width: 90%;
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-    color: white;
-    font-family: 'Macondo';
+  max-width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  color: white;
+  font-family: "Macondo";
 }
 
-
 .detalhes-titulo {
-    font-family: 'Press Start 2P';
-    font-size: 20px;
-    margin-bottom: 25px;
-    text-shadow: 3px 3px 3px rgb(121, 105, 71);
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-shadow: 3px 3px 3px rgb(121, 105, 71);
 }
 
 .detalhes-card {
-    background-color: rgb(126, 87, 35);
-    border: rgb(73, 49, 4);
-    box-shadow: rgba(73, 49, 4, 0.7);
-    border-radius: 12px;
+  background-color: rgb(126, 87, 35);
+  border: rgb(73, 49, 4);
+  box-shadow: rgba(73, 49, 4, 0.7);
+  border-radius: 12px;
 
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-    align-items: center;
+  align-items: center;
 }
-
 
 .detalhes-img-detail {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
 
-    border-radius: 10px;
-    border: 2px solid #2a1807;
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 2px solid #2a1807;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
-
 
 .detalhes-info {
-    text-align: center;
+  text-align: center;
 }
-
-
 
 .detalhes-nome {
-    font-size: 22px;
-    margin-bottom: 8px;
-    text-shadow: 3px 3px rgb(70, 45, 14);
+  font-size: 22px;
+  margin-bottom: 8px;
+  text-shadow: 3px 3px rgb(70, 45, 14);
 }
 
-
 .detalhes-preco {
-    display: flex;
-    justify-content: center;
-    font-family: 'Macondo';
-    color: #ffe8a3;
-    margin-top: 30px;
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Macondo";
+  color: #ffe8a3;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 .detalhes-descricao {
-    font-size: 16px;
-    margin-bottom: 25px;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
-
 
 .btn-detalhes {
-    font-family: 'Macondo';
-    background-color: rgb(126, 87, 35);
-    cursor: pointer;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 3px;
-    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
-    color: white;
-    
+  font-family: "Macondo";
+  background-color: rgb(126, 87, 35);
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 3px;
+  box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+  color: white;
 }
-
 
 .btn-add-carrinho,
 .btn-voltar {
-    font-family: 'Macondo';
-    background-color: rgb(126, 87, 35);
-    cursor: pointer;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 3px;
-    box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
-    color: white;
+  font-family: "Macondo";
+  background-color: rgb(126, 87, 35);
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 3px;
+  box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+  color: white;
 }
 
 .icone-moeda-detail {
-    width: 28px;
-    height: 18px;
-    margin-left: 5px;
-    margin-bottom: 1px;
+  width: 28px;
+  height: 18px;
+  margin-left: 5px;
+  margin-bottom: 1px;
 }
 
-@media(min-width: 768px) and (max-width: 1023px) {
-    .detalhes-card {
-        flex-direction: column; 
-        justify-content: center;
-        gap: 30px;
-        padding: 25px;
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .detalhes-card {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+  }
 
-    .icone-moeda-detail{
-     width: 25px;
- }
- 
-    .detalhes-preco{
-        justify-content: center;
-    }
+  .icone-moeda-detail {
+    width: 25px;
+  }
+
+  .detalhes-preco {
+    justify-content: center;
+  }
 }
-
-
 
 @media (min-width: 1024px) {
+  .container-detalhes {
+    max-width: 1000px;
+    margin-top: 40px;
+  }
 
-    .container-detalhes {
-        max-width: 1000px;
-        margin-top: 40px;
-    }
+  .detalhes-titulo {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
 
-    .detalhes-titulo {
-        font-size: 26px;
-        margin-bottom: 35px;
-    }
+  .detalhes-card {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+  }
 
-    .detalhes-card {
-        flex-direction: row; 
-        justify-content: center;
-        gap: 40px;
-        padding: 30px;
-    }
+  .detalhes-img-detail {
+    width: 260px;
+    height: 260px;
+  }
 
-    .detalhes-img-detail {
-        width: 260px;
-        height: 260px;
-    }
+  .detalhes-info {
+    max-width: 400px;
+    text-align: left;
+  }
 
-    .detalhes-info {
-        max-width: 400px;
-        text-align: left;
-    }
+  .detalhes-nome {
+    font-size: 28px;
+  }
 
-    .detalhes-nome {
-        font-size: 28px;
-    }
+  .detalhes-preco {
+    font-size: 22px;
+    color: #ffe8a3;
+    justify-content: left;
+  }
 
-    .detalhes-preco {
-        font-size: 22px;
-        color: #ffe8a3;
-        justify-content: left;
-    }
+  .detalhes-descricao {
+    font-size: 18px;
+  }
 
-    .detalhes-descricao {
-        font-size: 18px;
-    }
-
-    .icone-moeda-detail{
-        width: 30px;
-    }
+  .icone-moeda-detail {
+    width: 30px;
+  }
 }
