@@ -163,6 +163,37 @@
   margin-top: 20px;
 }
 
+.link-finalizar-compra{
+  display: block;
+  justify-content: center;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+  background-color: rgb(126, 87, 35);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Macondo";
+}
+
+.link-carrinho-cart {
+  display: block;
+  justify-content: center;
+  width: 180px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 5px 10px rgba(73, 49, 4, 0.541);
+  background-color: rgb(126, 87, 35);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Macondo";
+}
+
 @media (min-width: 375px) and (max-width: 767px) {
   .container-detalhes-cart {
     flex-direction: row;
