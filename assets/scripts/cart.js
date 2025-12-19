@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (totalOuroCarrinho) {
         totalOuroCarrinho.textContent = `Total: ${total} de ouro`;
       }
-      localStorage.setItem("totalOuroCarrinho", String(total));
+      localStorage.setItem("totalOuroCarrinho", String(total.toFixed(2)));
     }
   };
   xhr.open("GET", "/produtos.json");
